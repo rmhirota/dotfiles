@@ -1,0 +1,165 @@
+// Place your key bindings in this file to override the defaults
+[
+    // RStudio key bindings
+    {
+        "key": "cmd+shift+m",
+        "command": "type",
+        "args": { "text": " |>" },
+        "when": "editorLangId =~ /r|rmd|qmd/ && editorTextFocus"
+    },
+    {
+        "key": "alt+-",
+        "command": "type",
+        "args": { "text": " <- " },
+        "when": "editorLangId =~ /r|rmd|qmd/ && editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "r.loadAll"
+    },
+    {
+        "key": "ctrl+alt+i",
+        "command": "type",
+        "when": "editorLangId =~ /r|rmd|qmd/ && editorTextFocus",
+        "args": {
+            "text": "```{r}\n\n```"
+        }
+    },
+    {
+        "key": "ctrl+alt+shift+r",
+        "command": "type",
+        "when": "editorLangId =~ /r|rmd|qmd/ && editorTextFocus",
+        "args": {
+            "text": "#' Title\n#'\n#'Description\n#'\n#'@param $$\n#'\n#'@export\n#'\n#'@example\n#'"
+        }
+    },
+
+    {
+        "key": "cmd+shift+r",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == r && editorTextFocus",
+        "args": {
+            "snippet": "# ${TM_SELECTED_TEXT}$0 ----"
+        }
+    },
+
+
+    // Custom shortcuts
+    {
+        "key": "shift+alt+cmd+left",
+        "command": "workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "shift+alt+cmd+right",
+        "command": "workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "workbench.view.scm",
+        "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "alt+q",
+        "when": "editorLangId =~ /r|rmd|qmd/ && editorTextFocus",
+        "command": "rewrap.rewrapComment"
+    },
+
+    // Conflicts
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "shift+cmd+m",
+        "command": "-workbench.actions.view.problems",
+        "when": "workbench.panel.markers.view.active"
+    },
+    {
+        "key": "shift+alt+cmd+left",
+        "command": "-cursorColumnSelectLeft",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "ctrl+cmd+left",
+        "command": "-workbench.action.moveEditorToPreviousGroup"
+    },
+    {
+        "key": "ctrl+cmd+right",
+        "command": "-workbench.action.moveEditorToNextGroup"
+    },
+    {
+        "key": "shift+alt+cmd+right",
+        "command": "-cursorColumnSelectRight",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "-editor.action.previousMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+g",
+        "command": "-workbench.action.terminal.findPrevious",
+        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+g",
+        "command": "-editor.action.nextMatchFindAction",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+g",
+        "command": "-workbench.action.terminal.findNext",
+        "when": "terminalFindFocused && terminalProcessSupported || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active"
+    },
+    {
+        "key": "ctrl+shift+g",
+        "command": "-workbench.view.scm",
+        "when": "workbench.scm.active && !gitlens:disabled && config.gitlens.keymap == 'chorded'"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-selectAllSearchEditorMatches",
+        "when": "inSearchEditor"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-editor.action.selectHighlights",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+l",
+        "command": "-addCursorsAtSearchResults",
+        "when": "fileMatchOrMatchFocus && searchViewletVisible"
+    },
+    {
+        "key": "alt+cmd+right",
+        "command": "-workbench.action.terminal.focusNextPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "alt+cmd+left",
+        "command": "-workbench.action.terminal.focusPreviousPane",
+        "when": "terminalFocus && terminalHasBeenCreated || terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "ctrl+alt+cmd+r",
+        "command": "r.newFileDocument"
+    },
+]

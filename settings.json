@@ -1,0 +1,69 @@
+{
+    "r.rterm.mac": "/opt/homebrew/bin/radian",
+    "r.plot.useHttpgd": true,
+    "r.bracketedPaste": true,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.minimap.enabled": false,
+    "workbench.startupEditor": "none",
+    "redhat.telemetry.enabled": false,
+    "editor.tabSize": 2,
+    "security.workspace.trust.untrustedFiles": "open",
+    "explorer.confirmDelete": false,
+    "jupyter.askForKernelRestart": false,
+    "git.autofetch": true,
+    "editor.rulers": [
+        80,
+        100
+    ],
+    "path-autocomplete.pathMappings": {
+        "/": "/",
+        "./": "${folder}"
+    },
+    // "[python]": {
+    //     "editor.defaultFormatter": "ms-python.black-formatter",
+    //     "editor.formatOnSave": true
+    //   },
+    "outline.showFields": false,
+    "workbench.colorTheme": "Visual Studio Dark",
+    "workbench.panel.defaultLocation": "right",
+    "files.defaultLanguage": "r",
+    "terminal.integrated.defaultLocation": "editor",
+    "git.confirmSync": false,
+    "gitlens.gitCommands.skipConfirmations": [
+        "fetch:command",
+        "stash-push:command",
+        "switch:command",
+        "pull:command",
+        "push:command"
+    ],
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "explorer.confirmDragAndDrop": false,
+    "editor.unicodeHighlight.nonBasicASCII": false,
+    "git.suggestSmartCommit": false,
+    "files.associations": {
+        "*.rmd": "markdown"
+    },
+    "[python]": {
+        "editor.formatOnSave": true,
+        "editor.formatOnPaste": true,
+        "editor.formatOnType": true
+    },
+    "python.formatting.provider": "black",
+    "quarto.mathjax.theme": "dark",
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "[quarto]": {
+        "files.trimTrailingWhitespace": false
+    },
+    "diffEditor.ignoreTrimWhitespace": false,
+    "editor.unicodeHighlight.invisibleCharacters": false,
+    "editor.unicodeHighlight.ambiguousCharacters": false,
+    "git.openRepositoryInParentFolders": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "window.zoomLevel": 1,
+    "editor.accessibilitySupport": "off"
+}
